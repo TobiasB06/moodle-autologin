@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Campus Virtual UNSAM Autologin",
+  "description": "Completa la contraseña e inicia sesión automáticamente en campusvirtualecyt.unsam.edu.ar",
+  "version": "1.0.0",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://campusvirtualecyt.unsam.edu.ar/login/index.php"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://campusvirtualecyt.unsam.edu.ar/login/index.php"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

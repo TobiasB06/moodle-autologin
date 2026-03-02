@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Configurar autologin</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 560px;
+        margin: 24px auto;
+        line-height: 1.4;
+        padding: 0 16px;
+      }
+
+      label,
+      input,
+      button {
+        display: block;
+        width: 100%;
+      }
+
+      input {
+        padding: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+
+      button {
+        padding: 10px;
+        cursor: pointer;
+      }
+
+      .status {
+        margin-top: 12px;
+        font-size: 0.95rem;
+      }
+
+      .warning {
+        background: #fff3cd;
+        border: 1px solid #ffecb5;
+        padding: 10px;
+        border-radius: 6px;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Campus Virtual UNSAM - Autologin</h1>
+    <p class="warning">
+      Tu contraseña se guarda localmente en el navegador mediante <code>chrome.storage.local</code>.
+      No compartas tu perfil del navegador con otras personas.
+    </p>
+
+    <label>
+      Contraseña
+      <input id="password" type="password" autocomplete="current-password" placeholder="Ingresa tu contraseña" />
+    </label>
+
+    <label>
+      <input id="enabled" type="checkbox" />
+      Activar autologin
+    </label>
+
+    <button id="save">Guardar</button>
+    <p id="status" class="status"></p>
+
+    <script src="options.js"></script>
+  </body>
+</html>
