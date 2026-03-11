@@ -19,6 +19,14 @@ y luego envía el formulario de login en:
 
 ## Configuración
 
+### Opción rápida (recomendada)
+
+1. Abrí la página de login del Campus Virtual.
+2. Si no hay contraseña guardada, aparece un modal tipo pop-up dentro de la página.
+3. Escribí tu contraseña (se mantiene oculta) y tocá **Guardar y continuar**.
+
+### Opción manual
+
 1. Abrí los detalles de la extensión y entrá en **Extension options / Opciones**.
 2. Escribí tu contraseña.
 3. Marcá **Activar autologin**.
